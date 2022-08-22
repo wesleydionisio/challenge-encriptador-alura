@@ -1,7 +1,9 @@
 html {
 
-
+    scroll-behavior: smooth;
     --defaultColor: #0A3871;
+    --darkenDefault: #031326;
+    --DefaultColorHover: #0B3E7D;
     --lightBackground: #f1f1f1;
     --white: white;
     --grey: #4b4b4b;
@@ -38,7 +40,35 @@ header {
 
 }
 
-#logoHeader {
+footer {
+
+    padding-top: 20px;
+    display: flex;
+    background-color: var(--defaultColor);
+    height: 87px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+
+
+
+}
+
+.footerTab {
+
+    padding: 10px 0;
+    color: var(--white);
+    font-size: x-small;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: var(--darkenDefault);
+
+}
+
+.logoSite {
+
     max-width: 48px;
 
 }
@@ -49,7 +79,7 @@ header {
 }
 
 main {
-    padding: 40px 0;
+    padding: 20px 0;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -67,6 +97,7 @@ main {
     background-color: var(--white);
     border-radius: 24px;
     margin: 20px 0;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.068), 0 15px 12px rgba(0, 0, 0, 0.075);
 
 
 }
@@ -86,17 +117,33 @@ main {
 
 }
 
-.textarea {
-    padding:0 20px;
+textarea {
+
+    text-align: left;
+    padding: 0 20px;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    align-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 300px;
-    min-height:250px;
+    min-height: 250px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    overflow:scroll;
+    overflow: scroll;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 0;
+
+}
+
+textarea:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-style: none;
+  }
+textarea::placeholder {
+
+    color:var(--grey);
 
 }
 
@@ -106,6 +153,12 @@ main {
     flex-direction: column;
     align-content: center;
     gap: 15px;
+}
+
+.containerButtons a {
+
+    text-decoration: none;
+
 }
 
 .infoText {
@@ -123,6 +176,12 @@ main {
 
 .primaryButton {
     
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     font-size: medium;
     color: var(--white);
     padding: 25px;
@@ -131,11 +190,27 @@ main {
     height: 65px;
     background-color: var(--defaultColor);
     border-radius: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+
+.primaryButton:hover {
+
+    background-color: var(--DefaultColorHover);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 }
 
 .secundaryButton {
 
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     font-size: medium;
     color: var(--defaultColor);
     padding: 25px;
@@ -143,6 +218,28 @@ main {
     height: 65px;
     border: 1px solid var(--defaultColor);
     border-radius: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
+}
+
+.secundaryButton:hover {
+
+    color: var(--defaultColor);
+    padding: 25px;
+    width: 300px;
+    height: 65px;
+    border: 1px solid var(--defaultColor);
+    background-color: var(--defaultColor);
+    color: var(--white);
+    border-radius: 24px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+
+}
+
+.iconButton img {
+
+    max-height: 20px;
 
 }

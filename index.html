@@ -17,7 +17,12 @@
 
     <header>
 
-        <img id="logoHeader" src="/imgs/logo-alura.svg">
+        <div class="logoSite">
+
+            <img src="/imgs/logo-alura.svg">
+
+        </div>
+
         <span id="descriptionLogo">| Encriptador de Texto</p>
 
     </header>
@@ -34,10 +39,7 @@
         <div class="containerText">
 
 
-            <div class="textarea" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci
-                montes, sit et diam
-                risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget
-                fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</div>
+            <textarea contenteditable="true" placeholder="Digitar texto"></textarea>
 
         </div>
 
@@ -49,10 +51,12 @@
                 <span>Apenas letras minúsculas e sem acento.</span>
 
             </div>
-
-            <button class="primaryButton">Criptografar</button>
-            <button class="secundaryButton">Descriptografar</button>
-
+            <a href="#result">
+                <button class="primaryButton" id="encrypt">Criptografar</button>
+            </a>
+            <a href="#">
+                <button class="secundaryButton" id="uncrypt">Descriptografar</button>
+            </a>
         </div>
 
         <!-- Output -->
@@ -65,11 +69,13 @@
         <div class="containerText">
 
 
-            <div class="textarea" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci
-                montes, sit et diam
-                risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget
-                fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</div>
-            <button class="primaryButton">Copiar</button>
+            <textarea id="result" placeholder="Resultado do seu texto"></textarea>
+            <button class="primaryButton">
+
+                <div class="iconButton"><img src="imgs/copy-ico.svg"></div>
+                Copiar
+
+            </button>
 
         </div>
 
@@ -79,7 +85,22 @@
 
     <footer>
 
-        Footer
+
+            <div class="logoSite">
+    
+                <img src="/imgs/alura-logo-text.svg">
+    
+            </div>
+
+            <div class="footerTab">
+
+                <span>Por: Wesley Dionisio | Curso Oracle One - T3 | 2022</span>
+
+            </div>
+    
+
+    
+        
 
     </footer>
 
