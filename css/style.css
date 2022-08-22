@@ -9,7 +9,6 @@ html {
     --grey: #4b4b4b;
     font-family: 'Inter', sans-serif;
     background-color: var(--lightBackground);
-    -webkit-text-fill-color: var(--white);
 
 }
 
