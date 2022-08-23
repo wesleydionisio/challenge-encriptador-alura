@@ -1,7 +1,6 @@
 const inputTexto = document.querySelector(".input-texto");
 const mensagem = document.querySelector(".mensagem");
 const copy = document.querySelector("#copy");
-// document.getElementById("div-aparece").style.display = 'none';
 
 
 //Encriptar mensagem
@@ -10,7 +9,6 @@ function btnEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value)
     mensagem.value = textoEncriptado
     mensagem.style.backgroundImage = "none"
-    aparece()
 }
 
 
@@ -32,7 +30,6 @@ function btnDesencriptar() {
     const textoEncriptado = desencriptar(inputTexto.value)
     mensagem.value = textoEncriptado
     mensagem.style.backgroundImage = "none"
-    aparece()
 }
 
 function desencriptar(stringDesencriptada) {
