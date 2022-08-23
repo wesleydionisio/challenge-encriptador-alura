@@ -4,16 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/9fbc1884c1.js" crossorigin="anonymous"></script>
-
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -43,62 +39,63 @@
 
     <main>
         <section class="col-1">
-        <section class="containerInput">
-        <div class="containerTitle">
-            <span class="subTitle">Para começar</span>
-            <h1>Digite seu Texto</h1>
-        </div>
+            <section class="containerInput">
+                <div class="containerTitle">
+                    <span class="subTitle">Para começar</span>
+                    <h1>Digite seu Texto</h1>
+                </div>
 
-        <div class="containerText">
+                <div class="containerText">
 
 
-            <textarea id="input" placeholder="Digitar texto"></textarea>
+                    <textarea class="input-texto" id="inputText" placeholder="Digitar texto"></textarea>
 
-        </div>
+                </div>
 
-    </section>
+            </section>
 
-        <div class="containerButtons">
+            <div class="containerButtons">
 
-            <div class="infoText">
+                <div class="infoText">
 
-                <i class="fa-solid fa-circle-info"></i>
-                <span>Apenas letras minúsculas e sem acento.</span>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Apenas letras minúsculas e sem acento.</span>
 
+                </div>
+                <a href="#result">
+                    <button class="primaryButton" id="encrypt" onclick="btnEncriptar()">Encriptar</button>
+                </a>
+                <a href="#result">
+                    <button class="secundaryButton" id="uncrypt" onclick="btnDesencriptar()">Desencriptar</button>
+                </a>
             </div>
-            <a href="#result">
-                <button class="primaryButton" id="encrypt">Criptografar</button>
-            </a>
-            <a href="#">
-                <button class="secundaryButton" id="uncrypt">Descriptografar</button>
-            </a>
-        </div>
-    </section>
+        </section>
+
         <!-- Output -->
         <section class="col-2">
-        <!-- <section class="containerInput"> -->
+            <!-- <section class="containerInput"> -->
 
-        <div class="containerTitle">
-            <span class="subTitle">Confira abaixo</span>
-            <h1>Seu texto encriptografado</h1>
-        </div>
+            <div class="containerTitle">
+                <span class="subTitle">Confira abaixo</span>
+                <h1>Seu texto encriptografado</h1>
+            </div>
 
-        <div class="containerText"  id="result">
+            <div class="containerText" id="result">
 
 
-            <textarea id="output" readonly placeholder="Resultado..."></textarea>
-            <button class="primaryButton">
-                
-                <i class="fa-solid fa-copy"></i>
-                Copiar
+                <textarea class="mensagem" readonly placeholder="Resultado..."></textarea>
+                <button id="copy" class="primaryButton" onclick="copiar()">
 
-            </button>
+                    <i class="fa-solid fa-copy"></i>
+                    Copiar
 
-        </div>
+                </button>
 
-        <!-- </section> -->
+            </div>
 
-    </section>
+            <!-- </section> -->
+
+        </section>
 
     </main>
 
@@ -109,7 +106,7 @@
 
             <img src="imgs/alura-logo-text.svg">
 
-            
+
 
         </div>
 
@@ -126,6 +123,8 @@
     </footer>
 
 </body>
+
+<script type="text/javascript" src="js/script.js"></script>
 
 
 </html>
