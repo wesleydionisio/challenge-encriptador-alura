@@ -572,6 +572,14 @@ html button {
 
 }
 
+.copyButton::before {
+
+    content: "\f0c5";
+    font-family: 'FontAwesome';
+
+
+}
+
 .copiedButton {
 
     background-color: var(--lightDefault) !important;
@@ -585,4 +593,3 @@ html button {
     content: "\f00c";
     font-family: 'FontAwesome';
 
-}
