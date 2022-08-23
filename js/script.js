@@ -56,6 +56,8 @@ copy.addEventListener("click", () => {
         window.setTimeout(() => {
             copy.textContent = "Copiar";
             copy.classList.remove("copiedButton");
+            copy.classList.add("copyButton")
+            
         }, 1000);
     });
 });
