@@ -431,9 +431,9 @@ html button {
 
     }
 
-    mensagem.textarea::placeholder {
+    textarea.mensagem::placeholder {
 
-        background-image: url(/imgs/begin_texting.svg);
+        background-image: url(/imgs/begin_texting.png);
         background-size: 80%;
         background-position: center;
         background-repeat: no-repeat;
