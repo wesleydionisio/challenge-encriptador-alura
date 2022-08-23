@@ -433,7 +433,7 @@ html button {
 
     textarea.mensagem::placeholder {
 
-        background-image: url(/imgs/begin_texting.png);
+        background-image: url(imgs/begin_texting.svg);
         background-size: 80%;
         background-position: center;
         background-repeat: no-repeat;
